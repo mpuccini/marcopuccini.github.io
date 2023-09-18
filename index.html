@@ -8,41 +8,169 @@
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.3.5/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.3.5/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.0.1/dist/cdn/material-dynamic-colors.min.js"></script>
+    <script src="https://kit.fontawesome.com/a249e901d1.js" crossorigin="anonymous"></script>
+
 </head>
 
+
+
 <body class="light">
-    <nav class="top m l">
-      <img src="https://www.beercss.com/favicon.png" class="circle margin">
-      <a>
+    <nav class="left m l medium-elevate blur">
+<img src="imgs/avatar2.png" class="circle margin"/>
+      <a data-ui="#home">
         <i>home</i>
         <div>Home</div>
       </a>
-      <a>
-        <i>search</i>
-        <div>Search</div>
+      <a data-ui="#bio">
+        <i>person</i>
+        <div>Bio</div>
       </a>
-      <a>
-        <i>share</i>
-        <div>Share</div>
+      <a data-ui="#contacts">
+        <i>contacts</i>
+        <div>Contacts</div>
       </a>
+      <div class="max"></div>
+      <a href="https://github.com/mpuccini/mpuccini.github.io/tree/main" target="_blank">
+        <i class="fa-brands fa-github"></i>
     </nav>
-    <nav class="bottom s">
-      <a>
+
+    <nav class="bottom s blur">
+      <a data-ui="#home">
         <i>home</i>
+        <div>Home</div>
       </a>
-      <a>
-        <i>search</i>
+      <a data-ui="#bio">
+        <i>person</i>
+        <div>Bio</div>
       </a>
-      <a>
-        <i>share</i>
+      <a data-ui="#contacts">
+        <i>contacts</i>
+        <div>Contacts</div>
       </a>
     </nav>
 
     <main class="responsive">
-      <!-- <img src="https://www.beercss.com/beer-and-woman.jpg" class="responsive round"> -->
-      <h3>Welcome</h3>
-      <h5>The beer is ready!</h5>
+      <div class="page active" id="home">
+        <h3>Welcome!</h3>
+        <h5>This is my personal website.</h5>
+
+        I'm an HPC Data Engineer @ CINECA. 
+      </div>
+
+      <div class="page" id="bio">
+        <h3>Some info about me</h3>
+        <article class="no-padding round fill">
+          <div class="grid no-space">
+            <div class="s6">
+              <img class="responsive left-round" src="imgs/marco_puccini.jpeg"><!----><!---->
+            </div>
+            <div class="s6">
+              <div class="padding">
+                <h5>Short Bio</h5>
+                <p>I have a degree in physics. I have worked in the world of Research for <a class="link" href="https://www.cnr.it/en" target="_blank"><b>CNR</b></a> (National Research Council), 
+                  <a class="link" href="https://www.uniroma1.it/en/pagina-strutturale/home" target="_blank"><b>La Sapienza University of Rome</b></a> (various departments), 
+                  <a class="link" href="https://www.enea.it/en" target="_blank"><b>ENEA</b></a> (National Agency for New Technologies, Energy and Sustainable Economic Development) as a data scientist, 
+                  developer, system administrator, cloud solution architect, and for some companies for which I have been an ICT consultant.</p>
+                <p>I am currently HPC Data Engineer at the Data Management team belonging to the SCAI (SuperComputing Applications and Innovation) department, 
+                    i.e., the HPC department, of <a class="link" href="https://www.cineca.it/en" target="_blank"><b>CINECA</b></a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="no-padding round primary-container">
+          <div class="padding">
+            <h5>Skills</h5>
+            <table class="border">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Skills</th>
+                </tr>
+                <tr>
+                  <td><b>Programming</b></td>
+                  <td>Python, Bash, PHP, Javascript, HTML, CSS, JSON, YAML, Markdown, LaTeX</td>
+                </tr>
+                <tr>
+                  <td>Frameworks</td>
+                  <td>Flask, Django, FastAPI, jQuery, Vue.js, Node.js, Express.js</td>
+                </tr>
+                <tr>
+                  <td>DBMS</td>
+                  <td>PostgreSQL, MongoDB, Redis, SQLite, Neo4J</td>
+                </tr>
+                <tr>
+                  <td>Cloud</td>
+                  <td>AWS, OpenStack, Docker, Kubernetes, Terraform, Ansible, Vagrant, GitHub Actions</td>
+                </tr>
+                <tr>
+                  <td>OS</td>
+                  <td>Linux, Windows, macOS</td>
+                </tr>
+                <tr>
+                  <td>Other</td>
+                  <td>Git, SVN</td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </article>
+<article class="no-padding round tertiary-container">
+  <div class="padding">
+    You can download my CV <a href="docs/Europass_CV.pdf" target="_blank"><b>here</b></a>
+  </div>
+</article>
+      </div>
+
+      <div class="page" id="contacts">
+        <h3>Contact me</h3>
+          <article class="no-padding round fill">
+            <div class="grid no-space">
+              <div class="s6">
+                <img class="responsive left-round small" src="imgs/avatar2.png"><!----><!---->
+              </div>
+              <div class="s6">
+                <div class="padding">
+                  <h5>Main</h5>
+                  <a class="row wave round" href="mailto:m.puccini@cineca.it">
+                    <i>mail</i>
+                    <div>mail</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="no-padding round primary-container">
+            <div class="grid no-space">
+              <div class="s6">
+                <img class="responsive left-round large" src="imgs/network.jpg"><!----><!---->
+              </div>
+              <div class="s6">
+                  <div class="padding">
+                    <h5>Social</h5>
+                    <a class="row wave round" href="https://github.com/mpuccini" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                      <div>GitHub</div>
+                    </a>
+                    <a class="row wave round" href="https://gitlab.com/marcopuccini" target="_blank">
+                      <i class="fa-brands fa-gitlab"></i>
+                      <div>GitLab</div>
+                    </a>
+                    <a class="row wave round" href="https://www.linkedin.com/in/marco-puccini79/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                      <div>LinkedIn</div>
+                    </a>
+                    <a class="row wave round" href="https://www.reddit.com/user/Odysseo" target="_blank">
+                      <i class="fa-brands fa-reddit"></i>
+                      <div>Reddit</div>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </article>
+      </div>
     </main>
+
 
 </body>
 </html>

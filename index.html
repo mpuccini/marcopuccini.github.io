@@ -60,14 +60,7 @@
         <h3>Welcome!</h3>
         <h5>This is my personal website.</h5>
 
-        I'm an HPC Data Engineer @ CINECA. 
-	  <dialog class="top">
-	    <h5>Show the "real" me...</h5>
-	    <img class="responsibe" src="imgs/marco_puccini.jpeg">
-	    <nav class="right-align">
-	      <button class="border">Close</button>
-	    </nav>
-	  </dialog>
+        I'm an HPC Data Engineer @ CINECA.
       </div>
 
       <div class="page" id="bio">
@@ -86,11 +79,24 @@
 				</div>
 			</div>
                 <nav>
-                  <button class="small-round small small-elevate">
+                  <button class="small-round small small-elevate"onclick=" window.open('docs/Europass_CV.pdf','_blank')">
                     <i class="fa-regular fa-file-pdf"></i>
                     <span>Get my CV</span>
                   </button>
+			  		<button class="small-round small small-elevate" data-ui="#dialog">
+					<i class="fa-solid fa-image-portrait"></i>
+					<span>The "real" me...</span>
+				</button>
                 </nav>
+
+  			  	  	<dialog class="modular" id="dialog">
+				      <h5 class="no-margin">...a little bit neardy, I know.</h5>
+  			  	    <img class="small-round" src="imgs/marco_puccini_small.jpeg">
+  			  	    <nav class="right-align">
+  			  	      <button class="small-round small small-elevate" data-ui="#dialog">Close</button>
+  			  	    </nav>
+  			  	  </dialog>
+
         </article>
 
 
@@ -136,10 +142,10 @@
 
       <div class="page" id="contacts">
         <h3>Contact me</h3>
-          <article class="no-padding round fill">
+          <article class="no-padding small-round fill">
             <div class="grid no-space">
               <div class="s6">
-                <img class="responsive left-round small" src="imgs/avatar2.png"><!----><!---->
+                <img class="responsive small" src="imgs/avatar2.png"><!----><!---->
               </div>
               <div class="s6">
                 <div class="padding">
@@ -153,10 +159,10 @@
             </div>
           </article>
 
-          <article class="no-padding round primary-container">
+          <article class="no-padding small-round primary-container">
             <div class="grid no-space">
               <div class="s6">
-                <img class="responsive left-round large" src="imgs/network.jpg"><!----><!---->
+                <img class="responsive large" src="imgs/network.jpg"><!----><!---->
               </div>
               <div class="s6">
                   <div class="padding">
